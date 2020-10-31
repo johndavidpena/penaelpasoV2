@@ -5,8 +5,6 @@ import { useWindowSize } from '../hooks/useWindowSize';
 import { NextSeo, LocalBusinessJsonLd } from 'next-seo';
 import IndexStyles from '../stylesheets/Index.module.css';
 import IndexContact from '../components/Forms/IndexContact';
-// import '../components/Translate';
-
 
 const IndexPage = () => {
   const [showForm, setShowForm] = useState(true);
