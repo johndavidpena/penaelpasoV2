@@ -51,12 +51,12 @@
 }
 
 .middle img {
-  width: auto;
+  width: 50%;
 }
 @media (max-width: 600px) {
   .middle img {
-    width: auto;
-    height: 100px;
+    width: 30%;
+    height: auto;
   }
 }
 

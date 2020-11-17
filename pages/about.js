@@ -68,10 +68,11 @@ const About = () => {
 
         <div className={AboutStyles.text}>
           <h1>John Peña</h1>
-          <p>John Peña is a trusted and passionate realtor in the greater El Paso area. A member of the Greater El Paso Association of Realtors, John works with individuals, families, and investors interested in the city’s most coveted properties - with a particular focus on the West side, Kern Place, and the Upper Valley neighborhoods.</p>
+          <p>John Peña is a trusted and passionate realtor in the greater El Paso area. A member of the Greater El Paso Association of Realtors, John works with individuals and families who are relocating to El Paso. By specializing in relocating buyers, he has the knowledge and expertise to make your transition to El Paso smooth and effortless. John is dedicated to going above and beyond for all of his clients.</p>
           <br />
-          <p>As a former educator, John is well versed in working with all types of personalities and perspectives. Educating buyers and sellers on every aspect of a transaction is a top priority. He earns the respect and trust of clients by working tirelessly on their behalf and by always offering them competent and candid advice.  With a background in web development, John utilizes the latest trends in technology to provide clients with the best buying and selling experience possible.</p>
+          <p>As a former educator, John is well versed in working with all types of personalities and perspectives. Educating buyers and sellers on every aspect of a transaction is a top priority. He earns the respect and trust of clients by working tirelessly on their behalf and by always offering them competent and candid advice.  John utilizes the latest trends in technology to provide clients with the best buying and selling experience possible.</p>
           <br />
+
           <p>John is deeply connected to El Paso and Texas. He was born outside of Dallas and grew up in New Caney, a small town outside of Houston. El Paso is home where he is active in numerous local organizations and social groups. When he isn’t working, he enjoys hiking, brazilian jiu jitsu, traveling, and spending time with his family and friends. John can be reached at (915)355-3477 or email him at john@penaelpaso.com.</p>
         </div>
       </div>

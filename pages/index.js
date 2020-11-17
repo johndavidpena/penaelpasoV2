@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
-import { useTransition, animated, config } from 'react-spring';
+// import { useTransition, animated, config } from 'react-spring';
 import { useWindowSize } from '../hooks/useWindowSize';
 import { NextSeo, LocalBusinessJsonLd } from 'next-seo';
 import IndexStyles from '../stylesheets/Index.module.css';
@@ -127,27 +127,6 @@ const IndexPage = () => {
           </div>
         </div>
 
-        {showForm && (
-          <div className={IndexStyles.contactGrid}>
-            <IndexContact showForm={showForm} setShowForm={setShowForm} />
-
-            <div className={IndexStyles.contactBox}>
-              <h3>Contact Us</h3>
-              <img src="https://res.cloudinary.com/mimas-music/image/upload/v1604175659/casual-head-shot-400.jpg" alt="john-pena-headshot" srcSet="" />
-            </div>
-          </div>
-        )}
-
-        {!showForm && (
-          <div className={IndexStyles.contactThanks}>
-            <div className={IndexStyles.contactBox}>
-              <h3>Thank You</h3>
-              {/* FIX: NOT OPTIMIZED */}
-              <img src="https://res.cloudinary.com/mimas-music/image/upload/v1595342599/greenCasualHead.jpg" alt="john-pena-headshot" srcSet="" />
-            </div>
-          </div>
-        )}
-
         <div className={IndexStyles.vivaBox}>
           <div className={IndexStyles.vivaGrid}>
             <div className={IndexStyles.vivaHeading}>
@@ -168,6 +147,27 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
+
+        {showForm && (
+          <div className={IndexStyles.contactGrid}>
+            <div className={IndexStyles.contactBox}>
+              <h3>Contact Us</h3>
+              <img src="https://res.cloudinary.com/mimas-music/image/upload/v1604175659/casual-head-shot-400.jpg" alt="john-pena-headshot" srcSet="" />
+            </div>
+
+            <IndexContact showForm={showForm} setShowForm={setShowForm} />
+          </div>
+        )}
+
+        {!showForm && (
+          <div className={IndexStyles.contactThanks}>
+            <div className={IndexStyles.contactBox}>
+              <h3>Thank You</h3>
+              {/* FIX: NOT OPTIMIZED */}
+              <img src="https://res.cloudinary.com/mimas-music/image/upload/v1595342599/greenCasualHead.jpg" alt="john-pena-headshot" srcSet="" />
+            </div>
+          </div>
+        )}
       </div>
     </>
   );
